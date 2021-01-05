@@ -1,7 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import Head from 'next/head';
 import Link from 'next/link';
-import Nav from '@/components/Nav';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -17,11 +16,7 @@ export default function App({ Component, pageProps }) {
           Web Audio Issues
         </h1>
       </Link>
-
-      <nav className="mb-16 md:mb-8">
-        <Nav />
-      </nav>
-      <div className="flex flex-col h-full w-full lg:w-1/2">
+      <div className="mt-4 flex flex-col h-full w-full lg:w-1/2">
         <Component {...pageProps} />
       </div>
     </div>
